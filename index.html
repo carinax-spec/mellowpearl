@@ -10,6 +10,7 @@
             --text-dark: #333333;
             --accent-gold: #c5a059;
             --bg-charcoal: #2d2d2d;
+            --btn-hover: #4a4a4a;
         }
 
         body {
@@ -28,46 +29,24 @@
         }
         .banner-container img { width: 100%; height: auto; display: block; }
 
-        main { max-width: 800px; margin: 20px auto; padding: 0 20px; }
+        main { max-width: 800px; margin: 40px auto; padding: 0 20px; }
 
-        /* 新增：快速引流板块 */
-        .quick-links {
-            margin-bottom: 50px;
-            text-align: center;
-        }
-        .link-item {
-            display: block;
-            background: #fff;
-            color: var(--text-dark);
-            text-decoration: none;
-            padding: 15px;
-            margin-bottom: 12px;
-            border: 1px solid #ddd;
-            border-radius: 4px;
-            transition: all 0.3s;
-            font-weight: bold;
-        }
-        .link-item:hover {
-            background: var(--bg-charcoal);
-            color: #fff;
-            transform: translateY(-2px);
-        }
-        .brand-hint { font-weight: normal; font-size: 0.75rem; color: #888; margin-top: 4px; }
-
-        /* 原有：品牌内容板块 */
+        /* 1. 品牌头部展示区 */
         .brand-header { text-align: center; margin-bottom: 40px; }
-        .brand-title { font-size: 1.8rem; letter-spacing: 0.2rem; color: var(--bg-charcoal); margin-bottom: 10px; }
-        .brand-subtitle { font-size: 0.95rem; color: var(--accent-gold); font-weight: bold; }
+        .brand-title { font-size: 2rem; letter-spacing: 0.2rem; color: var(--bg-charcoal); margin: 0; }
+        .brand-subtitle { font-size: 1rem; color: var(--accent-gold); font-weight: bold; margin-top: 10px; }
 
+        /* 2. 品牌详细介绍区 */
         .content-section {
             background-color: #fff;
             padding: 40px;
             border-radius: 4px;
             box-shadow: 0 4px 15px rgba(0,0,0,0.05);
             text-align: left;
+            margin-bottom: 50px;
         }
 
-        h2 { border-left: 4px solid var(--accent-gold); padding-left: 15px; font-size: 1.2rem; margin-top: 30px; }
+        h2 { border-left: 4px solid var(--accent-gold); padding-left: 15px; font-size: 1.25rem; margin-top: 30px; }
         
         .pearl-types {
             display: flex; justify-content: space-around; flex-wrap: wrap;
@@ -75,22 +54,14 @@
         }
         .pearl-tag {
             background: var(--bg-charcoal); color: #fff;
-            padding: 5px 15px; border-radius: 20px; font-size: 0.85rem;
+            padding: 5px 15px; border-radius: 20px; font-size: 0.9rem;
         }
 
-        footer {
-            margin-top: 60px; padding: 40px 0;
-            background-color: var(--bg-charcoal); color: #fff;
-            text-align: center; font-size: 0.75rem;
+        /* 3. 底部引流区：放在内容之后 */
+        .shop-navigation {
+            text-align: center;
+            margin-top: 60px;
         }
-    </style>
-</head>
-<body>
-
-<header>
-    <div class="banner-container">
-        <img src="banner.jpg" alt="Mellow Pearl Japan Banner">
-    </div>
-</header>
-
-<main>
+        .shop-header {
+            font-size: 1.1rem;
+            font-weight: bold;
