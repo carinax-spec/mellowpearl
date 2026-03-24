@@ -10,7 +10,6 @@
             --text-dark: #333333;
             --accent-gold: #c5a059;
             --bg-charcoal: #2d2d2d;
-            --btn-hover: #4a4a4a;
         }
 
         body {
@@ -19,142 +18,69 @@
             background-color: var(--main-grey);
             color: var(--text-dark);
             line-height: 1.8;
+            -webkit-font-smoothing: antialiased;
         }
 
-        /* 顶部 Banner */
-        .banner-container {
+        header {
             width: 100%; max-width: 1100px;
             margin: 0 auto; overflow: hidden;
             background-color: #fff;
         }
-        .banner-container img { width: 100%; height: auto; display: block; }
+        header img { width: 100%; height: auto; display: block; }
 
         main { max-width: 800px; margin: 40px auto; padding: 0 20px; }
 
-        /* 1. 品牌头部展示区 */
-        .brand-header { text-align: center; margin-bottom: 40px; }
-        .brand-title { font-size: 2rem; letter-spacing: 0.2rem; color: var(--bg-charcoal); margin: 0; }
-        .brand-subtitle { font-size: 1rem; color: var(--accent-gold); font-weight: bold; margin-top: 10px; }
+        .brand-header { text-align: center; margin-bottom: 50px; }
+        .brand-title { font-size: 2.2rem; letter-spacing: 0.3rem; color: var(--bg-charcoal); margin: 0; }
+        .brand-subtitle { font-size: 0.9rem; color: var(--accent-gold); font-weight: bold; margin-top: 15px; letter-spacing: 1px; }
 
-        /* 2. 品牌详细介绍区 */
         .content-section {
             background-color: #fff;
-            padding: 40px;
-            border-radius: 4px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            padding: 50px 40px;
+            border-radius: 2px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.03);
+            text-align: center; /* コンセプトを中央寄せに */
+            margin-bottom: 60px;
+        }
+
+        .concept-text {
+            font-size: 1rem;
             text-align: left;
-            margin-bottom: 50px;
+            display: inline-block;
+            max-width: 550px;
+            margin: 0 auto;
         }
 
-        h2 { border-left: 4px solid var(--accent-gold); padding-left: 15px; font-size: 1.25rem; margin-top: 30px; }
-        
-        .pearl-types {
-            display: flex; justify-content: space-around; flex-wrap: wrap;
-            margin: 25px 0; gap: 10px;
-        }
-        .pearl-tag {
-            background: var(--bg-charcoal); color: #fff;
-            padding: 5px 15px; border-radius: 20px; font-size: 0.9rem;
-        }
-
-        /* 3. 底部引流区：放在内容之后 */
-        .shop-navigation {
-            text-align: center;
-            margin-top: 60px;
-        }
-        .shop-header {
+        .concept-highlight {
             font-size: 1.1rem;
             font-weight: bold;
-            margin-bottom: 20px;
             color: var(--bg-charcoal);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-        .shop-header::before, .shop-header::after {
-            content: ""; width: 50px; height: 1px; background: #ccc; margin: 0 15px;
-        }
-
-        .link-item {
             display: block;
-            background: #fff;
-            color: var(--text-dark);
-            text-decoration: none;
-            padding: 20px;
-            margin-bottom: 15px;
-            border: 1px solid #ddd;
-            border-radius: 4px;
-            transition: all 0.3s;
-            font-weight: bold;
+            margin-bottom: 20px;
+            text-align: center;
         }
-        .link-item:hover {
-            background: var(--bg-charcoal);
-            color: #fff;
-            transform: translateY(-3px);
-            box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+
+        h2 { 
+            border-bottom: 1px solid var(--accent-gold); 
+            display: inline-block;
+            padding-bottom: 5px;
+            font-size: 1.2rem; 
+            margin-top: 40px; 
+            margin-bottom: 25px;
         }
-        .brand-hint { font-weight: normal; font-size: 0.75rem; color: #888; margin-top: 5px; }
-
-        footer {
-            margin-top: 80px; padding: 50px 0;
-            background-color: var(--bg-charcoal); color: #fff;
-            text-align: center; font-size: 0.8rem;
-        }
-    </style>
-</head>
-<body>
-
-<header>
-    <div class="banner-container">
-        <img src="banner.jpg" alt="Mellow Pearl Japan Banner">
-    </div>
-</header>
-
-<main>
-    <div class="brand-header">
-        <h1 class="brand-title">MELLOW PEARL JAPAN</h1>
-        <p class="brand-subtitle">「自分らしさ」を、最高級の輝きで彩る。</p>
-    </div>
-
-    <div class="content-section">
-        <p>
-            ご覧いただきありがとうございます。大阪・西区のアトリエで、天然真珠の美しさを引き出すジュエリーを制作している <strong>Mellow Pearl Japan</strong> です。
-        </p>
-
-        <h2>Collection</h2>
-        <div class="pearl-types">
-            <span class="pearl-tag">白蝶真珠 (澳白)</span>
-            <span class="pearl-tag">アコヤ真珠</span>
-            <span class="pearl-tag">タヒチ真珠</span>
-            <span class="pearl-tag">淡水真珠</span>
-        </div>
-
-        <h2>Brand Concept</h2>
-        <p>甘すぎない「Mode Style」をベースに、身に着けるたびに「今日も頑張ろう！」と思えるポジティブで情熱的なデザインをお届けします。</p>
-
-        <h2>Location</h2>
-        <p>大阪府大阪市中央区南久宝寺町4-5-17 アップウェル船場 201室</p>
-    </div>
-
-    <section class="shop-navigation">
-        <div class="shop-header">Online Shop</div>
         
-        <a href="https://jp.mercari.com/user/profile/176032430" class="link-item" target="_blank">
-            🛒 Mercari Store (Hana Pearl)
-            <div class="brand-hint">メルカリ公式旗艦店・新作順次出品中</div>
-        </a>
+        .pearl-types {
+            display: flex; justify-content: center; flex-wrap: wrap;
+            margin: 10px 0 30px 0; gap: 12px;
+        }
+        .pearl-tag {
+            border: 1px solid var(--bg-charcoal); color: var(--bg-charcoal);
+            padding: 4px 18px; border-radius: 0px; font-size: 0.85rem;
+            transition: all 0.3s;
+        }
+        .pearl-tag:hover { background: var(--bg-charcoal); color: #fff; }
 
-        <a href="#" class="link-item">
-            🎨 minne Official Store
-            <div class="brand-hint">作家審査中 (Coming Soon)</div>
-        </a>
-    </section>
-</main>
-
-<footer>
-    <p>&copy; 2026 Mellow Pearl Japan / 羽天株式会社</p>
-    <p style="letter-spacing: 1px; margin-top: 10px;">Wear it last, take it off first.</p>
-</footer>
-
-</body>
-</html>
+        /* ショップナビゲーション */
+        .shop-navigation { text-align: center; margin-top: 40px; }
+        .shop-header {
+            font-size: 1rem; font-weight: bold
