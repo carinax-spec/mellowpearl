@@ -83,4 +83,78 @@
         /* ショップナビゲーション */
         .shop-navigation { text-align: center; margin-top: 40px; }
         .shop-header {
-            font-size: 1rem; font-weight: bold
+            font-size: 1rem; font-weight: bold; margin-bottom: 25px;
+            color: var(--bg-charcoal); letter-spacing: 2px;
+        }
+
+        .link-item {
+            display: block; background: #fff; color: var(--text-dark);
+            text-decoration: none; padding: 22px; margin-bottom: 15px;
+            border: 1px solid #ddd; border-radius: 2px; transition: all 0.3s;
+            font-weight: bold;
+        }
+        .link-item:hover {
+            background: var(--bg-charcoal); color: #fff;
+            transform: translateY(-3px); box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+        }
+        .brand-hint { font-weight: normal; font-size: 0.7rem; color: #888; margin-top: 6px; }
+
+        footer {
+            margin-top: 100px; padding: 60px 0;
+            background-color: var(--bg-charcoal); color: #fff;
+            text-align: center; font-size: 0.75rem;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <img src="banner.jpg" alt="Mellow Pearl Japan Banner">
+</header>
+
+<main>
+    <div class="brand-header">
+        <h1 class="brand-title">MELLOW PEARL JAPAN</h1>
+        <p class="brand-subtitle">Premium Pearl Jewelry from Osaka</p>
+    </div>
+
+    <div class="content-section">
+        <div class="concept-text">
+            <span class="concept-highlight">Mellow — それは、時を経てたどり着く「円熟した輝き」。</span>
+            真珠は、ジュエリーボックスに眠らせておくためのものではありません。<br><br>
+            「甘すぎないMode Style」を纏い、何気ない日常にそっと寄り添う。<br>
+            身に着けるたびに、心に情熱の火を灯し、「明日も頑張ろう」と背中を押してくれる。<br><br>
+            あなたの日常を、最高級のテリで彩るパートナーでありたい。
+        </div>
+
+        <h2>Collection</h2>
+        <div class="pearl-types">
+            <span class="pearl-tag">白蝶真珠 (澳白)</span>
+            <span class="pearl-tag">アコヤ真珠</span>
+            <span class="pearl-tag">タヒチ真珠</span>
+            <span class="pearl-tag">淡水真珠</span>
+        </div>
+    </div>
+
+    <section class="shop-navigation">
+        <div class="shop-header">ONLINE SHOP</div>
+        
+        <a href="https://jp.mercari.com/user/profile/176032430" class="link-item" target="_blank">
+            🛒 Mercari Store (Hana Pearl)
+            <div class="brand-hint">メルカリ公式旗艦店・新作順次出品中</div>
+        </a>
+
+        <a href="#" class="link-item">
+            🎨 minne Official Store
+            <div class="brand-hint">作家審査中 (Coming Soon)</div>
+        </a>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2026 Mellow Pearl Japan / 羽天株式会社</p>
+    <p style="letter-spacing: 2px; margin-top: 15px; opacity: 0.8;">Wear it last, take it off first.</p>
+</footer>
+
+</body>
+</html>
