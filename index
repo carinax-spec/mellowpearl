@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mellow Pearl Japan | 高級真珠ジュエリー</title>
+    <style>
+        :root {
+            --main-grey: #f4f4f4;
+            --text-dark: #333333;
+            --accent-gold: #c5a059;
+            --bg-charcoal: #2d2d2d;
+        }
+
+        body {
+            font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--main-grey);
+            color: var(--text-dark);
+            line-height: 1.8;
+        }
+
+        header {
+            width: 100%;
+            background-color: #fff;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .banner-container {
+            width: 100%;
+            max-width: 1100px;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+
+        .banner-container img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        main {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 0 20px;
+            text-align: center;
+        }
+
+        .brand-title {
+            font-size: 2rem;
+            letter-spacing: 0.2rem;
+            color: var(--bg-charcoal);
+            margin-bottom: 10px;
+        }
+
+        .brand-subtitle {
+            font-size: 1rem;
+            color: var(--accent-gold);
+            font-weight: bold;
+            margin-bottom: 40px;
+        }
+
+        .content-section {
+            background-color: #fff;
+            padding: 40px;
+            border-radius: 4px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            text-align: left;
+        }
+
+        h2 {
+            border-left: 4px solid var(--accent-gold);
+            padding-left: 15px;
+            font-size: 1.25rem;
+            margin-top: 30px;
+        }
+
+        .intro-text {
+            font-size: 1rem;
+            margin-bottom: 20px;
+        }
+
+        .pearl-types {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin: 30px 0;
+            gap: 10px;
+        }
+
+        .pearl-tag {
+            background: var(--bg-charcoal);
+            color: #fff;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+        }
+
+        footer {
+            margin-top: 60px;
+            padding: 40px 0;
+            background-color: var(--bg-charcoal);
+            color: #fff;
+            text-align: center;
+            font-size: 0.8rem;
+        }
+
+        .cta-button {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 15px 40px;
+            background-color: var(--accent-gold);
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 2px;
+            transition: opacity 0.3s;
+        }
+
+        .cta-button:hover {
+            opacity: 0.8;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="banner-container">
+        <img src="banner.jpg" alt="Mellow Pearl Japan Banner">
+    </div>
+</header>
+
+<main>
+    <h1 class="brand-title">MELLOW PEARL JAPAN</h1>
+    <p class="brand-subtitle">「自分らしさ」を、最高級の輝きで彩る。</p>
+
+    <div class="content-section">
+        <p class="intro-text">
+            ご覧いただきありがとうございます。大阪・西区のアトリエで、天然真珠の美しさを引き出すジュエリーを制作している <strong>Mellow Pearl Japan</strong> です。
+        </p>
+
+        <h2>Our Pearls</h2>
+        <div class="pearl-types">
+            <span class="pearl-tag">白蝶真珠 (澳白)</span>
+            <span class="pearl-tag">アコヤ真珠</span>
+            <span class="pearl-tag">タヒチ真珠</span>
+            <span class="pearl-tag">淡水真珠</span>
+        </div>
+
+        <h2>Brand Concept</h2>
+        <p>甘すぎない「Mode Style」をベースに、身に着けるたびに「今日も頑張ろう！」と思えるポジティブで情热的なデザインをお届けします。</p>
+
+        <h2>Location</h2>
+        <p>大阪府大阪市中央区南久宝寺町4-5-17 アップウェル船場 201室</p>
+        
+        <div style="text-align: center;">
+            <a href="#" class="cta-button">Visit minne Store (Coming Soon)</a>
+        </div>
+    </div>
+</main>
+
+<footer>
+    <p>&copy; 2026 Mellow Pearl Japan / 羽天株式会社. All Rights Reserved.</p>
+    <p>Wear it last, take it off first.</p>
+</footer>
+
+</body>
+</html>
