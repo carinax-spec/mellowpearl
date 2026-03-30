@@ -106,58 +106,71 @@
         }
         .brand-hint { font-weight: normal; font-size: 0.7rem; color: #888; margin-top: 6px; }
 
-        /* Footer 四行結構樣式 */
-        footer {
-            margin-top: 100px; 
+        /* --- 修正後的 Footer 四行結構樣式 --- */
+        .site-footer {
+            margin-top: 100px;
             padding: 80px 20px;
-            background-color: var(--bg-charcoal); 
+            background-color: var(--bg-charcoal);
             color: #fff;
             text-align: center;
         }
 
-        .footer-line-1 {
-            font-size: 1.5rem;
-            letter-spacing: 4px;
-            margin-bottom: 25px;
+        .footer-row {
+            display: block;
+            width: 100%;
+        }
+
+        /* 第一行：品牌名 */
+        .f-brand {
+            font-size: 1.6rem;
+            letter-spacing: 0.3rem;
+            margin-bottom: 35px;
             font-family: 'Bodoni 72', 'Playfair Display', serif;
         }
 
-        .footer-line-2 {
-            margin-bottom: 15px;
+        /* 第二行：導航 */
+        .f-nav {
+            margin-bottom: 25px;
         }
-        .footer-line-2 ul {
+        .f-nav ul {
             list-style: none; padding: 0; margin: 0;
             display: flex; justify-content: center; gap: 25px; flex-wrap: wrap;
         }
-        .footer-line-2 a {
+        .f-nav a {
             color: #fff; text-decoration: none; font-size: 0.75rem; letter-spacing: 1.5px;
+            transition: opacity 0.3s;
         }
+        .f-nav a:hover { opacity: 0.7; }
 
-        .footer-line-3 {
+        /* 第三行：地區說明 */
+        .f-shipping {
             font-size: 0.65rem;
-            color: #aaa;
+            color: #999;
             letter-spacing: 1px;
-            margin-bottom: 25px;
+            margin-bottom: 35px;
             text-transform: uppercase;
         }
 
-        .footer-line-4 {
-            margin-bottom: 40px;
+        /* 第四行：Instagram */
+        .f-insta {
+            margin-bottom: 50px;
         }
-        .footer-line-4 a {
+        .f-insta a {
             color: #fff;
             text-decoration: none;
-            font-size: 0.8rem;
+            font-size: 0.85rem;
             letter-spacing: 2px;
             border-bottom: 1px solid #fff;
-            padding-bottom: 3px;
+            padding-bottom: 4px;
+            display: inline-block;
         }
 
-        .footer-copyright {
+        .f-copyright {
             font-size: 0.7rem;
-            opacity: 0.6;
+            opacity: 0.5;
+            line-height: 2;
         }
-        .mantra {
+        .f-mantra {
             letter-spacing: 2px; margin-top: 10px; font-style: italic;
         }
     </style>
@@ -200,24 +213,24 @@
             <div class="brand-hint">公式サイト・セレクトアイテム</div>
         </a>
 
-        <a href="https://jp.mercari.com/user/profile/176032430" class="link-item" target="_blank">
-            🛒 Mercari Store (Hana Pearl)
-            <div class="brand-hint">メルカリ公式旗艦店・1点物展開中</div>
-        </a>
-
         <a href="https://minne.com/@mellowpearl" class="link-item" target="_blank">
             🎨 minne Store
             <div class="brand-hint">日本国内発送・ハンドメイドマーケット</div>
         </a>
+
+        <a href="https://jp.mercari.com/user/profile/176032430" class="link-item" target="_blank">
+            🛒 Mercari Store (Hana Pearl)
+            <div class="brand-hint">メルカリ公式旗艦店・1点物展開中</div>
+        </a>
     </section>
 </main>
 
-<footer>
-    <div class="footer-line-1">
+<footer class="site-footer">
+    <div class="footer-row f-brand">
         MELLOW PEARL JAPAN
     </div>
 
-    <div class="footer-line-2">
+    <div class="footer-row f-nav">
         <ul>
             <li><a href="https://mellowpearl.stores.jp/" target="_blank">STORES</a></li>
             <li><a href="https://minne.com/@mellowpearl" target="_blank">MINNE</a></li>
@@ -226,17 +239,17 @@
         </ul>
     </div>
 
-    <div class="footer-line-3">
+    <div class="footer-row f-shipping">
         Domestic & International Shipping Available
     </div>
 
-    <div class="footer-line-4">
+    <div class="footer-row f-insta">
         <a href="https://www.instagram.com/mellow_pearl_japan" target="_blank">INSTAGRAM</a>
     </div>
 
-    <div class="footer-copyright">
+    <div class="footer-row f-copyright">
         <p>&copy; 2026 Mellow Pearl Japan / 羽天株式会社</p>
-        <p class="mantra">Wear it last, take it off first.</p>
+        <p class="f-mantra">Wear it last, take it off first.</p>
     </div>
 </footer>
 
