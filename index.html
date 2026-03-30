@@ -106,10 +106,59 @@
         }
         .brand-hint { font-weight: normal; font-size: 0.7rem; color: #888; margin-top: 6px; }
 
+        /* Footer 四行結構樣式 */
         footer {
-            margin-top: 100px; padding: 60px 0;
-            background-color: var(--bg-charcoal); color: #fff;
-            text-align: center; font-size: 0.75rem;
+            margin-top: 100px; 
+            padding: 80px 20px;
+            background-color: var(--bg-charcoal); 
+            color: #fff;
+            text-align: center;
+        }
+
+        .footer-line-1 {
+            font-size: 1.5rem;
+            letter-spacing: 4px;
+            margin-bottom: 25px;
+            font-family: 'Bodoni 72', 'Playfair Display', serif;
+        }
+
+        .footer-line-2 {
+            margin-bottom: 15px;
+        }
+        .footer-line-2 ul {
+            list-style: none; padding: 0; margin: 0;
+            display: flex; justify-content: center; gap: 25px; flex-wrap: wrap;
+        }
+        .footer-line-2 a {
+            color: #fff; text-decoration: none; font-size: 0.75rem; letter-spacing: 1.5px;
+        }
+
+        .footer-line-3 {
+            font-size: 0.65rem;
+            color: #aaa;
+            letter-spacing: 1px;
+            margin-bottom: 25px;
+            text-transform: uppercase;
+        }
+
+        .footer-line-4 {
+            margin-bottom: 40px;
+        }
+        .footer-line-4 a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 0.8rem;
+            letter-spacing: 2px;
+            border-bottom: 1px solid #fff;
+            padding-bottom: 3px;
+        }
+
+        .footer-copyright {
+            font-size: 0.7rem;
+            opacity: 0.6;
+        }
+        .mantra {
+            letter-spacing: 2px; margin-top: 10px; font-style: italic;
         }
     </style>
 </head>
@@ -146,11 +195,6 @@
     <section class="shop-navigation">
         <div class="shop-header">OFFICIAL LINKS</div>
         
-        <a href="https://www.instagram.com/mellowpljp/" class="link-item" target="_blank">
-            📸 Instagram
-            <div class="brand-hint">新作情報・日常のコーディネート</div>
-        </a>
-
         <a href="https://mellowpearl.stores.jp/" class="link-item" target="_blank">
             💎 STORES Official Shop
             <div class="brand-hint">公式サイト・セレクトアイテム</div>
@@ -160,12 +204,40 @@
             🛒 Mercari Store (Hana Pearl)
             <div class="brand-hint">メルカリ公式旗艦店・1点物展開中</div>
         </a>
+
+        <a href="https://minne.com/@mellowpearl" class="link-item" target="_blank">
+            🎨 minne Store
+            <div class="brand-hint">日本国内発送・ハンドメイドマーケット</div>
+        </a>
     </section>
 </main>
 
 <footer>
-    <p>&copy; 2026 Mellow Pearl Japan / 羽天株式会社</p>
-    <p style="letter-spacing: 2px; margin-top: 15px; opacity: 0.8;">Wear it last, take it off first.</p>
+    <div class="footer-line-1">
+        MELLOW PEARL JAPAN
+    </div>
+
+    <div class="footer-line-2">
+        <ul>
+            <li><a href="https://mellowpearl.stores.jp/" target="_blank">STORES</a></li>
+            <li><a href="https://minne.com/@mellowpearl" target="_blank">MINNE</a></li>
+            <li><a href="https://jp.mercari.com/user/profile/176032430" target="_blank">MERCARI</a></li>
+            <li><a href="#" target="_blank">ETSY</a></li>
+        </ul>
+    </div>
+
+    <div class="footer-line-3">
+        Domestic & International Shipping Available
+    </div>
+
+    <div class="footer-line-4">
+        <a href="https://www.instagram.com/mellow_pearl_japan" target="_blank">INSTAGRAM</a>
+    </div>
+
+    <div class="footer-copyright">
+        <p>&copy; 2026 Mellow Pearl Japan / 羽天株式会社</p>
+        <p class="mantra">Wear it last, take it off first.</p>
+    </div>
 </footer>
 
 </body>
