@@ -113,7 +113,7 @@
         }
         .brand-hint { font-weight: normal; font-size: 0.7rem; color: #888; margin-top: 6px; }
 
-        /* --- Footer 最終優化結構 --- */
+        /* --- Footer 結構樣式 --- */
         .site-footer {
             margin-top: 100px;
             padding: 80px 20px;
@@ -135,7 +135,7 @@
             font-family: 'Bodoni 72', 'Playfair Display', serif;
         }
 
-        /* 行2：店鋪導航（僅保留3個有效鏈接） */
+        /* 行2：店鋪導航 */
         .f-nav {
             margin-bottom: 25px;
         }
@@ -149,7 +149,7 @@
         }
         .f-nav a:hover { opacity: 0.7; }
 
-        /* 行3：說明文字 */
+        /* 行3：物流說明 */
         .f-shipping {
             font-size: 0.65rem;
             color: #999;
@@ -158,7 +158,7 @@
             text-transform: uppercase;
         }
 
-        /* 行4：Instagram（置底） */
+        /* 行4：Instagram */
         .f-insta {
             margin-bottom: 50px;
         }
@@ -172,13 +172,18 @@
             display: inline-block;
         }
 
+        /* 行5：版權與母公司跳轉 */
         .f-copyright {
             font-size: 0.7rem;
-            opacity: 0.5;
+            opacity: 0.8;
             line-height: 2;
         }
+        .f-copyright a:hover {
+            color: #fff !important;
+            border-bottom-color: #fff !important;
+        }
         .f-mantra {
-            letter-spacing: 2px; margin-top: 10px; font-style: italic;
+            letter-spacing: 2px; margin-top: 15px; font-style: italic; opacity: 0.5;
         }
     </style>
 </head>
@@ -202,11 +207,11 @@
             身に着けるたびに、心に情熱の火を燈し、「明日も頑張ろう」と背中を押してくれる。<br><br>
             あなたの日常を、最高級のテリで彩る夥伴でありたい。
 
-            <!-- 新增：2026年1月開始販售與成熟女性定位的 Story 區塊 -->
+            <!-- Story 區塊 -->
             <div class="story-section">
                 <span class="concept-highlight" style="font-size: 1rem; margin-bottom: 10px;">Brand Story</span>
                 2026年1月、私たちは現代を生きる洗練された女性たちのために、新たな一歩を踏み出しました。<br><br>
-                仕事、家庭、そして自分自身の時間。様々なライフステージで輝く30代から50代の大人女性へ、フォーマルの枠を超えた新しい真珠美学を提案します。凛とした清冷感と、芯のある強さをその胸元に。
+                仕事、家庭、精度自身の時間。様々なライフステージで輝く30代から50代の大人女性へ、フォーマルの枠を超えた新しい真珠美学を提案します。凛とした清冷感と、芯のある強さをその胸元に。
             </div>
         </div>
 
@@ -265,8 +270,12 @@
         <a href="https://www.instagram.com/mellowpljp/" target="_blank">INSTAGRAM</a>
     </div>
 
+    <!-- 優化調整後的置底區域 -->
     <div class="footer-row f-copyright">
-        <p>&copy; 2026 Mellow Pearl Japan / 羽天株式會社</p>
+        <p style="margin-bottom: 15px; letter-spacing: 1px;">
+            Operated by <a href="https://utenco.jp" target="_blank" style="color: rgba(255,255,255,0.8); text-decoration: none; border-bottom: 1px solid rgba(255,255,255,0.3); padding-bottom: 2px; font-weight: normal; transition: all 0.3s;">羽天株式会社 (Uten Co., Ltd.)</a>
+        </p>
+        <p>&copy; 2026 Mellow Pearl Japan. All Rights Reserved.</p>
         <p class="f-mantra">Wear it last, take it off first.</p>
     </div>
 </footer>
