@@ -86,7 +86,7 @@
         
         .pearl-types {
             display: flex; justify-content: center; flex-wrap: wrap;
-            margin: 10px 0 30px 0; gap: 12px;
+            margin: 10px 0 10px 0; gap: 12px;
         }
         .pearl-tag {
             border: 1px solid var(--bg-charcoal); color: var(--bg-charcoal);
@@ -94,6 +94,31 @@
             transition: all 0.3s;
         }
         .pearl-tag:hover { background: var(--bg-charcoal); color: #fff; }
+
+        /* 💡 新增：頁面中部通知區塊樣式（洗練極簡風） */
+        .notice-container {
+            margin: 45px auto 10px auto;
+            max-width: 550px;
+            padding: 20px 25px;
+            border: 1px solid #eaeaea;
+            background-color: #fafafa;
+            text-align: left;
+        }
+        .notice-title {
+            font-size: 0.85rem;
+            font-weight: bold;
+            color: var(--accent-gold);
+            letter-spacing: 1px;
+            display: block;
+            margin-bottom: 8px;
+            text-transform: uppercase;
+        }
+        .notice-body {
+            font-size: 0.85rem;
+            color: #555555;
+            line-height: 1.7;
+            margin: 0;
+        }
 
         .shop-navigation { text-align: center; margin-top: 40px; }
         .shop-header {
@@ -204,7 +229,7 @@
             <span class="concept-highlight">Mellow — それは、時を経てたどり着く「円熟した輝き」。</span>
             真珠は、ジュエリーボックスに眠らせておくためのものではありません。<br><br>
             「甘すぎないMode Style」を纏い、何気ない日常にそっと寄り添う。<br>
-            身に着けるたびに、心に情熱の火を燈し、「明日も頑張ろう」と背中を押してくれる。<br><br>
+            身に着けるたびに、心に情熱的の火を燈し、「明日も頑張ろう」と背中を押してくれる。<br><br>
             あなたの日常を、最高級のテリで彩る夥伴でありたい。
 
             <!-- Story 區塊 -->
@@ -221,6 +246,14 @@
             <span class="pearl-tag">アコヤ真珠</span>
             <span class="pearl-tag">タヒチ真珠</span>
             <span class="pearl-tag">淡水真珠</span>
+        </div>
+
+        <!-- 💡 新增：店鋪業務調整通知模組 -->
+        <div class="notice-container">
+            <span class="notice-title">Notice / お知らせ</span>
+            <p class="notice-body">
+                いつも当店をご利用いただき誠にありがとうございます。この度、メルカリ店「Hana Pearl」は業務調整に伴い、最新の旗艦店である<strong>「Abyss&amp;Co.真珠專門店」</strong>へ一時的に統合・移転いたしました。これまで展開していた1点物アイテム等は、新店舗にて引き続きお買い求めいただけます。
+            </p>
         </div>
     </div>
 
@@ -242,8 +275,9 @@
             <div class="brand-hint">日本国内発送・ハンドメイドマーケット</div>
         </a>
 
-        <a href="https://jp.mercari.com/user/profile/176032430" class="link-item" target="_blank">
-            🛒 Mercari Store (Hana Pearl)
+        <!-- 💡 已修改：Mercari 模組名稱與連結更換 -->
+        <a href="https://jp.mercari.com/user/profile/772828023" class="link-item" target="_blank">
+            🛒 Mercari Store (Abyss&Co.真珠專門店)
             <div class="brand-hint">メルカリ公式旗艦店・1點物展開中</div>
         </a>
     </section>
@@ -258,7 +292,8 @@
         <ul>
             <li><a href="https://mellowpearl.stores.jp/" target="_blank">STORES</a></li>
             <li><a href="https://minne.com/@mellowpearl" target="_blank">MINNE</a></li>
-            <li><a href="https://jp.mercari.com/user/profile/176032430" target="_blank">MERCARI</a></li>
+            <!-- 💡 已同步修改頁尾 Mercari 連結 -->
+            <li><a href="https://jp.mercari.com/user/profile/772828023" target="_blank">MERCARI</a></li>
         </ul>
     </div>
 
